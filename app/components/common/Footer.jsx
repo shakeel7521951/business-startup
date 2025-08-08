@@ -46,7 +46,7 @@ const footerData = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-teal-600 to-sky-900 text-white pt-12 py-5 px-6">
+    <footer className=" bg-gradient-to-b from-teal-600 to-sky-900 text-white pt-12 py-5 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
         {/* Contact */}
         <div>

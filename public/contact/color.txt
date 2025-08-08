@@ -1,0 +1,65 @@
+🎨 Luxury Arab-Inspired Color Scheme Usage
+Color	Hex Code	Where to Use	Reason
+Navy Blue	#0D1B2A	Primary background for sections, headers, and navigation bars	Dark, deep tones give a professional, royal, and calming feel — also works well as the base for gold accents
+Gold	#D4AF37	Accent color for buttons, icons, borders, call-to-action highlights, hover states	Conveys wealth, prestige, and exclusivity — pops against navy/black
+Pearl White	#F9F9F9	Primary text background, form fields, cards, and section dividers	Keeps things light, elegant, and readable while balancing the dark tones
+Black	#1C1C1C	Footer background, hero overlays, typography for white backgrounds	Adds contrast, elegance, and depth without overpowering
+Optional Shadow Tint	rgba(0,0,0,0.4)	Image overlays, modals, hover effects	Ensures text stands out on photos and adds drama
+
+📍 Page Area-by-Area Guide
+1. Header & Navigation
+Background: Navy Blue #0D1B2A
+
+Text / Links: Pearl White #F9F9F9
+
+Hover / Active Links: Gold #D4AF37
+
+Logo: Gold & Pearl White mix for brand recognition
+
+2. Hero Section
+Background Image: 4K luxury Arab skyline or geometric pattern
+
+Overlay: Black with ~40–50% opacity to make text pop
+
+Heading Text: Pearl White
+
+CTA Button Primary: Gold background + Navy text
+
+CTA Button Hover: Navy background + Gold text + gold border
+
+3. Main Content Sections
+Alternate Navy Blue and Pearl White backgrounds for each section to create visual rhythm
+
+Headlines on dark background → Pearl White text
+
+Headlines on light background → Navy Blue text
+
+Icons / bullet points → Gold for luxury touch
+
+4. Forms & Contact Section
+Background: Pearl White
+
+Input borders: Navy Blue (default) → Gold on focus
+
+Submit button: Gold background → Navy text
+
+Hover effect: Navy background → Gold text
+
+5. Footer
+Background: Black #1C1C1C
+
+Text: Pearl White
+
+Links hover: Gold underline
+
+Social icons: Gold with subtle hover glow
+
+6. Animations & Microinteractions
+Hover Glow: Soft gold glow for buttons/icons (box-shadow: 0 0 10px rgba(212,175,55,0.5))
+
+Smooth Fade-in: For hero text & section titles
+
+Scroll Animations: Gold underline slide-in under section headings
+
+💡 Luxury Design Principle:
+Gold should be used sparingly (max 10–15% of the interface) so it remains special. Navy Blue is your foundation, Pearl White keeps it airy, Black deepens sections, and Gold is the jewel.

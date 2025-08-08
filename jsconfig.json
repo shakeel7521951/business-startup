@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+     "jsx": "react-jsx",        // for React 17+ (or "react" for older)
+    "esModuleInterop": true,   // helps with imports
+    "moduleResolution": "node",
+    "target": "ES6",
     "paths": {
       "@/*": ["./*"]
     }
