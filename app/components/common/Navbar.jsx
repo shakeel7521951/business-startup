@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
@@ -7,8 +8,20 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#0D1B2A] text-[#F9F9F9]">
-      <div className="flex justify-between gap-15 items-center px-4 py-4 pb-5 max-w-7xl mx-auto">
+    <header className="bg-[#0D1B2A] text-[#F9F9F9] relative">
+      {/* Luxury background elements - light version */}
+      <div className="absolute inset-0 z-10">
+        <Image
+          src="/about/bg (3).jpg"
+          alt="Subtle gold texture background"
+          priority
+          fill
+          className="object-cover opacity-5"
+          quality={10}
+          unoptimized={true}
+        />
+      </div>
+      <div className="flex justify-between gap-15 items-center px-4 py-4 pb-5 max-w-7xl mx-auto relative z-100">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center">
@@ -18,7 +31,7 @@ export default function Navbar() {
 
         <div>
           {/* Call Now */}
-          <div className="hidden md:block text-sm text-[#D4AF37]/80 font-medium text-end mb-4 max-lg:my-auto">
+          <div className="hidden md:block text-[#D4AF37]/80 font-medium text-end mb-4 max-lg:my-auto">
             Free Consultation: <a href="tel:+97450343737" className="hover:underline">+97450343737</a>
           </div>
 
@@ -42,7 +55,7 @@ export default function Navbar() {
 
             <Link href="/initiatives" className="hover:text-[#D4AF37]">Initiatives</Link>
 
-            <div className="relative group">
+            <div className="relative group ">
               <button className="flex items-center hover:text-[#D4AF37]">
                 Network <FaChevronDown className="ml-1 text-xs" />
               </button>
@@ -71,7 +84,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden bg-[#0D1B2A] px-4 pb-4 space-y-2">
+        <nav className="lg:hidden px-4 pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top ">
+
           <Link href="/" className="block hover:text-[#D4AF37] py-2">Home</Link>
           <Link href="/about" className="block hover:text-[#D4AF37] py-2">About</Link>
           <Link href="/oman" className="block hover:text-[#D4AF37] py-2">Oman</Link>
@@ -82,7 +96,8 @@ export default function Navbar() {
           <Link href="/events" className="block hover:text-[#D4AF37] py-2">Events</Link>
           <Link href="/contact" className="block hover:text-[#D4AF37] py-2">Contact</Link>
         </nav>
-      )}
-    </header>
+      )
+      }
+    </header >
   );
 }

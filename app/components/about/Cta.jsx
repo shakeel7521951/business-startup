@@ -12,7 +12,7 @@ const Cta = () => {
                     src="/about/svg (2).jpg"
                     alt="Subtle gold texture background"
                     fill
-                    className="object-cover opacity-10"
+                    className="object-cover opacity-5"
                     quality={10}
                     unoptimized={true}
                 />
