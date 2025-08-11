@@ -1,9 +1,8 @@
-import Hero from "../components/contact/Hero";
-
+import Contact from "../components/contact/contact";
 export default function Home() {
   return (
-   <div>
-    <Hero />
-   </div>
+    <div>
+      <Contact />
+    </div>
   );
 }
