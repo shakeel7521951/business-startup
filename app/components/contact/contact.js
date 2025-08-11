@@ -159,7 +159,7 @@ export default function Contact() {
                 className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
               />
               <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
-                <option disabled selected>
+                <option  value="">
                   Company Size
                 </option>
                 <option value="0-10">0-10 Employees</option>
@@ -175,7 +175,7 @@ export default function Contact() {
                 className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
               />
               <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
-                <option value="" disabled>
+                <option value="">
                   Activities interested in
                 </option>
                 <option value="Preparation">Preparation</option>
@@ -190,7 +190,7 @@ export default function Contact() {
                 className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
               />
               <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
-                <option value="" disabled>
+                <option value="">
                   Sub Activity interested in
                 </option>
                 <option value="market-research">Market Research</option>

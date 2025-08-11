@@ -46,10 +46,10 @@ export default function Navbar() {
                 Activites <FaChevronDown className="ml-1 text-xs" />
               </button>
               <div className="absolute top-6 left-0 hidden group-hover:block bg-white rounded px-6 py-2 z-10 text-nowrap shadow-lg">
-                <Link href="/activity1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Preparation</Link>
-                <Link href="/activity1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Formation</Link>
-                <Link href="/activity1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Expansion</Link>
-                <Link href="/activity2" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Transition</Link>
+                <Link href="/activities/preparation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Preparation</Link>
+                <Link href="/activities/formation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Formation</Link>
+                <Link href="/activities/expension" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Expansion</Link>
+                <Link href="/activities/transition" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Transition</Link>
               </div>
             </div>
 
