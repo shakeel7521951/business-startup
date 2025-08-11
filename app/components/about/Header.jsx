@@ -11,14 +11,14 @@ const Header = () => {
             <section className="relative h-[85vh] bg-[#0D1B2A] overflow-hidden">
                 {/* Background elements with Image tags */}
                 <div className="absolute inset-0 overflow-hidden z-0">
-                    {/* Gold pattern overlay */}
+                    {/* Header Image */}
                     <Image
                         src="/about/header.jpg"
                         alt="Luxury gold texture"
                         fill
-                        className="object-repeat opacity-30"
+                        className="object-repeat opacity-25 object-cover"
                         quality={10}
-                        unoptimized // Remove if you want Next.js to optimize SVG
+                        unoptimized 
                     />
                    
                     {/* Gradient overlay */}

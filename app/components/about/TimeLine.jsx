@@ -39,6 +39,17 @@ export const Timeline = () => {
     return (
         <section className="relative bg-white pb-20">
             <div className="container mx-auto px-6 relative z-10">
+                {/* Luxury background elements - light version */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/about/bg.jpg"
+                        alt="Subtle gold texture background"
+                        fill
+                        className="object-cover opacity-10"
+                        quality={10}
+                        unoptimized={true}
+                    />
+                </div>
                 {/* Section Header */}
                 <div className="text-center mb-24">
                     <div className="inline-flex items-center mb-6">
