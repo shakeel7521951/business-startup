@@ -10,17 +10,20 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full h-[400px] sm:h-[850px] overflow-hidden">
+      <div className="relative w-full sm:h-[850px] h-[650px] overflow-hidden">
+        {/* Background Image */}
         <img
           src="./contact/contact.jpg"
-          alt="Contact Background"
+          alt="News Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute bottom-0 left-0 w-full h-[200px] sm:h-[450px] bg-gradient-to-t from-[#F9F9F9] to-transparent"></div>
+
+        {/* Bottom fade */}
+        <div className="absolute bottom-0 left-0 w-full h-[450px] bg-gradient-to-t from-[#F9F9F9] to-transparent"></div>
       </div>
 
       {/* Form Section */}
-      <div className="relative z-20 -mt-[80px] sm:-mt-[150px] flex justify-center pb-10 sm:pb-20 px-4 select-none ">
+      <div className="relative z-20 -mt-[150px] flex justify-center select-none ">
         <div className="bg-[#F9F9F9] p-1 w-full max-w-[1140px] rounded-tl-lg rounded-tr-lg">
           <div className="flex flex-col lg:flex-row justify-center py-3 gap-6">
             {/* Left side */}
