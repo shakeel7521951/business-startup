@@ -1,132 +1,128 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
+import formationData from "./formationData";
+
 export default function Formation() {
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const loadMore = () => {
+    setVisibleCount((prev) => prev + 6);
+  };
+
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full sm:h-[850px] h-[650px] overflow-hidden">
-        {/* Background Image */}
+      <div className="relative w-full sm:h-[500px] h-[350px]">
         <img
           src="../activities/formation.jpg"
           alt="Formation Background"
           className="w-full h-full object-cover"
         />
+        <div className="hidden sm:block absolute bottom-10 left-0 right-0 mx-auto p-8 bg-[#0D1B2A]/50 backdrop-blur-sm rounded-lg shadow-2xl w-full max-w-4xl transform -translate-y-1/2 sm:left-10 sm:right-auto sm:top-1/2 sm:bottom-auto sm:max-w-[50%]">
+          {/* Gold Accent Bar */}
+          <div className="absolute left-0 top-0 h-full w-2 bg-[#D4AF37] rounded-l-lg"></div>
 
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 w-full h-[450px] bg-gradient-to-t from-[#F9F9F9] to-transparent"></div>
+          <div className="flex flex-col font-bold text-2xl sm:text-4xl text-[#D4AF37] mb-4 relative ">
+            <h1 className="">Formation</h1>
+            <hr className="absolute left-0 border-0 bottom-0 h-1 w-16 bg-[#D4AF37]"></hr>
+          </div>
+
+          <p className="text-white text-justify text-lg leading-relaxed mb-6">
+            We prepare and provide an overview of relevant events and
+            initiatives for businesses and key stakeholders in the GCC ecosystem
+            (Oman, Qatar, and Saudi Arabia). Please contact our local experts to
+            submit your event for consideration. We're pleased to showcase
+            valuable opportunities across the region.
+          </p>
+        </div>
       </div>
 
-      {/* Form Section */}
-      <div className="relative z-20 -mt-[150px] flex justify-center select-none">
-        {/* Main container */}
-        <div className="bg-white pt-20 px-4 sm:px-8 max-w-screen-xl mx-auto flex flex-col items-center text-center">
-          {/* Title + Intro */}
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-6 transition group-hover:text-[#D4AF37]">
+      {/* Content */}
+      <div className="flex justify-center select-none bg-[#F9F9F9] py-12">
+        <div className="px-4 sm:px-8 max-w-screen-xl w-full flex flex-col items-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-6">
             Formation
           </h2>
-          <p className="text-gray-700 leading-relaxed max-w-5xl mb-12">
-            <strong>Formation</strong> is the crucial phase where your business
-            vision transforms into a legally established entity. Whether you’re
-            setting up a local company, forming a joint venture, or registering
-            within a free zone, this process demands careful attention to
-            regulatory compliance and legal frameworks specific to Oman, Saudi
-            Arabia, and Qatar. Selecting the appropriate corporate structure
-            influences taxation, ownership rights, and operational flexibility.
-            A strong foundation also involves securing banking relationships,
-            safeguarding intellectual property, and aligning human resource
-            policies with local labor laws. Partnering with experienced local
-            advisors is essential to navigate administrative procedures
-            efficiently and avoid costly delays. Establishing a well-structured
-            and compliant business sets the stage for sustainable growth and
-            solid regional credibility.
+          <p className="text-gray-700 leading-relaxed max-w-5xl mb-12 text-center">
+            <strong>Formation</strong> involves an in-depth process of
+            comprehensive market research, detailed risk assessment, and
+            thorough regulatory compliance planning. It requires identifying the
+            right business structure, understanding legal requirements, and
+            developing a strong foundational strategy to ensure long-term
+            success. This phase also includes stakeholder engagement, financial
+            forecasting, and aligning resources to support initial operations.
+            Effective formation sets the stage for sustainable growth by
+            creating a clear roadmap, minimizing potential risks, and ensuring
+            adherence to all relevant laws and regulations within the targeted
+            markets.
           </p>
 
-          {/* Blogs Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-            {[
-              {
-                title: "Choosing the Right Legal Structure",
-                text: "The legal foundation of your business determines not only how you operate but also how you grow. In Oman, Saudi Arabia, and Qatar, choosing between an LLC, partnership, or branch office involves understanding local ownership rules, capital requirements, and tax implications. Making the right decision early can save you costly restructuring later.",
-              },
-              {
-                title: "Free Zone Advantages",
-                text: "Free zones across the Gulf offer more than tax breaks—they provide operational flexibility, faster licensing, and full foreign ownership. From Oman’s Salalah Free Zone to Qatar’s QFC, identifying the right location aligns your operations with market accessibility and long-term scalability.",
-              },
-              {
-                title: "Navigating Licensing Requirements",
-                text: "Licensing can be a complex maze if not approached strategically. Each country has its own timelines, required documents, and sector-specific rules. A proactive approach with legal and industry advisors ensures compliance while avoiding delays that can stall your market entry.",
-              },
-              {
-                title: "Banking for Startups",
-                text: "Opening a corporate bank account in the Gulf requires more than just paperwork—it’s about building trust with financial institutions. Understanding KYC protocols, capital deposit requirements, and banking fees can streamline your setup and create a healthy foundation for financial operations.",
-              },
-              {
-                title: "Intellectual Property Protection",
-                text: "In the modern Gulf economy, brand and technology protection are non-negotiable. Trademark and patent registration processes differ between Oman, Saudi Arabia, and Qatar. Early registration safeguards your innovations, especially in competitive or fast-moving sectors.",
-              },
-              {
-                title: "Joint Ventures with Local Partners",
-                text: "Strategic partnerships can open doors to government contracts, local networks, and distribution channels. A joint venture must be structured with clear agreements on profit-sharing, management roles, and dispute resolution to ensure long-term stability.",
-              },
-              {
-                title: "Corporate Governance in the Gulf",
-                text: "Strong governance is more than compliance—it’s about building a culture of transparency and accountability. Implementing clear shareholder agreements, regular board meetings, and regulatory reporting can enhance investor trust and corporate reputation.",
-              },
-              {
-                title: "Staffing and HR Compliance",
-                text: "Recruiting in Oman, Saudi Arabia, and Qatar requires compliance with labor laws, visa processes, and nationalization policies. Aligning HR strategies with legal obligations ensures smooth operations while fostering a motivated and diverse workforce.",
-              },
-              {
-                title: "Taxation Insights for Startups",
-                text: "Understanding the Gulf’s evolving tax landscape is critical. From VAT implementation to corporate tax obligations in Saudi Arabia, proactive tax planning helps avoid penalties while optimizing profitability across jurisdictions.",
-              },
-              {
-                title: "Cultural Intelligence in Business",
-                text: "Cultural sensitivity is a business asset in the Gulf. Building relationships in Oman, Saudi Arabia, and Qatar means respecting traditions, communication styles, and business etiquette—factors that often influence deal-making more than written contracts.",
-              },
-              {
-                title: "Scaling Beyond the Gulf",
-                text: "Once your formation is complete, planning for regional or global expansion requires compliance with both local laws and international regulations. Building a scalable model from day one ensures smoother transitions when entering new markets.",
-              },
-              {
-                title: "Sustainable Business Practices",
-                text: "Sustainability is becoming a cornerstone of Gulf economies. Embedding ESG principles into your formation strategy positions your company to meet government expectations, attract investment, and align with global market trends.",
-              },
-            ].map((blog, idx) => (
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 w-full">
+            {formationData.slice(0, visibleCount).map((blog, idx) => (
               <div
                 key={idx}
-                className="bg-white border border-gray-200 rounded-xl shadow-lg p-6 flex flex-col justify-between hover:shadow-2xl transition duration-500"
+                className="bg-white rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition duration-500 flex flex-col h-full"
               >
-                <div>
-                  <h3 className="text-xl font-semibold text-[#0D1B2A] mb-3">
-                    {blog.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">{blog.text}</p>
-                </div>
-                <div className="mt-6">
-                  {idx % 2 === 0 ? (
-                    <button
-                      className="w-fit bg-[#D4AF37] text-white font-medium px-5 py-2 rounded-lg 
-         hover:bg-[#0D1B2A] hover:text-[#D4AF37] border border-transparent hover:border-[#D4AF37] 
-         transition duration-500 inline-block text-center"
-                    >
-                      Find Out More
-                    </button>
-                  ) : (
-                    <Link
-                      href="/contact"
-                      className="w-fit bg-[#D4AF37] text-white font-medium px-5 py-2 rounded-lg 
-    hover:bg-[#0D1B2A] hover:text-[#D4AF37] border border-transparent hover:border-[#D4AF37] 
-    transition duration-500 inline-block text-center"
-                    >
-                      Contact Us
-                    </Link>
-                  )}
+                {/* Image */}
+                <img
+                  src={blog.image || "../activities/formation.jpg"}
+                  alt={blog.title}
+                  className="w-full h-44 object-cover"
+                />
+
+                {/* Text Content */}
+                <div className="p-6 flex flex-col justify-between flex-grow">
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#0D1B2A] mb-2">
+                      {blog.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-3">{blog.text}</p>
+                    <p className="text-[#D4AF37] text-sm font-medium">
+                      Saudi Arabia, Oman, Qatar
+                    </p>
+                  </div>
+
+                  {/* Button */}
+                  <div className="mt-5">
+                    {idx % 2 === 0 ? (
+                      <Link
+                        href={`/activities/formation/${blog.slug}`}
+                        className="block w-full bg-[#0D1B2A] text-white font-medium py-2
+                        hover:bg-[#D4AF37] hover:text-[#0D1B2A] rounded-md border border-transparent hover:border-[#0D1B2A] 
+                        transition duration-500 text-center"
+                      >
+                        Find out more
+                      </Link>
+                    ) : (
+                      <Link
+                        href="/contact"
+                        className="block w-full bg-[#0D1B2A] text-white font-medium py-2
+                        hover:bg-[#D4AF37] hover:text-[#0D1B2A] rounded-md border border-transparent hover:border-[#0D1B2A] 
+                        transition duration-500 text-center"
+                      >
+                        Contact
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* Load More Button */}
+          {visibleCount < formationData.length && (
+            <button
+              onClick={loadMore}
+              className="bg-[#D4AF37] text-white font-medium px-6 py-2 rounded-md 
+              hover:bg-[#0D1B2A] hover:text-[#D4AF37] border border-transparent hover:border-[#D4AF37] 
+              transition duration-500"
+            >
+              Load More
+            </button>
+          )}
 
           {/* Company Logo Section */}
           <div className="bg-[#F9F9F9] w-full py-10 mb-5 ">
@@ -147,20 +143,17 @@ export default function Formation() {
             <div className="flex flex-wrap justify-center gap-8">
               {[
                 {
-                  title: "Transition",
-                  text: "Smooth shifts and regulatory compliance.",
-                  img: "../activities/transition.jpg",
-                  link: "/activities/transition",
-                },
-                {
                   title: "Preparation",
-                  text: "Market research and compliance planning.",
                   img: "../activities/preparation.jpg",
                   link: "/activities/preparation",
                 },
                 {
+                  title: "Transition",
+                  img: "../activities/transition.jpg",
+                  link: "/activities/transition",
+                },
+                {
                   title: "Expansion",
-                  text: "Scaling with tailored growth strategies.",
                   img: "../activities/expension.jpg",
                   link: "/activities/expension",
                 },
@@ -176,10 +169,9 @@ export default function Formation() {
                       className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
                     />
                     <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-end text-[#D4AF37]">
-                      <h4 className="text-lg font-semibold mb-2 bg-white inline-block px-1">
+                      <h4 className="relative text-lg font-semibold mb-10 bg-[#0D1B2A] inline-block px-1 text-center">
                         {activity.title}
                       </h4>
-                      <p className="text-sm text-white">{activity.text}</p>
                     </div>
                   </Link>
                 </div>
