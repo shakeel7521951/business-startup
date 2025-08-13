@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram, FaMailBulk, FaPhone } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 
@@ -10,29 +10,47 @@ const footerData = {
     phone: "+974 5034 3737",
     address: "Business Start Up in association with Shorouk Media, Level 18, Tornado Tower, West Bay, Doha, Qatar",
   },
-  activities: ["Preparation", "Formation", "Expansion", "Transition"],
-  explore: ["Home", "About", "Saudi Arabia", "Oman", "Qatar", "Initiatives", "News", "Events", "Contact"],
+  activities: [
+    { name: "Preparation", path: "/activities/preparation" },
+    { name: "Formation", path: "/activities/formation" },
+    { name: "Expansion", path: "/activities/expension" },
+    { name: "Transition", path: "/activities/transition" }
+  ],
+  explore: [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Saudi Arabia", path: "/saudi-arabia" },
+    { name: "Oman", path: "/oman" },
+    { name: "Qatar", path: "/qatar" },
+    { name: "Initiatives", path: "/initiatives" },
+    { name: "News", path: "/news" },
+    { name: "Events", path: "/events" },
+    { name: "Contact", path: "/contact" }
+  ],
   network: [
-    "Education Institutions",
-    "Business Councils",
-    "Government & Semi-Governmental Entities",
-    "Experts & Specialists",
-    "Financiers & Investors",
-    "Banks & Financial Institutions",
-    "Incubators & Accelerators",
+    { name: "Education Institutions", path: "/networks/education-institutions" },
+    { name: "Business Councils", path: "/networks/business-councils" },
+    { name: "Government & Semi-Governmental Entities", path: "/networks/government-entities" },
+    { name: "Experts & Specialists", path: "/networks/experts-and-specialists" },
+    { name: "Financiers & Investors", path: "/networks/finance-investors" },
+    { name: "Banks & Financial Institutions", path: "/networks/banks-financial-institutions" },
+    { name: "Incubators & Accelerators", path: "/networks/incubators-accelerators" }
   ],
   posts: [
     {
       date: "February 11, 2025",
       title: "Saudi Arabia and Cyprus strengthen maritime cooperation",
+      path: "/news/saudi-cyprus-cooperation"
     },
     {
       date: "January 28, 2025",
       title: "Qatar strategic relations strengthening economic prosperity",
+      path: "/news/qatar-economic-prosperity"
     },
     {
       date: "January 14, 2025",
-      title: "Oman’s 2025 budget balances social welfare and economic growth",
+      title: "Oman's 2025 budget balances social welfare and economic growth",
+      path: "/news/oman-budget-2025"
     },
   ],
   socialIcons: [
@@ -64,13 +82,20 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Contact</h3>
             <p className="flex items-center gap-2 mb-2">
-              <FaMailBulk className="text-[#D4AF37]" /> {footerData.contact.email}
+              <FaMailBulk className="text-[#D4AF37]" /> 
+              <Link href={`mailto:${footerData.contact.email}`} className="hover:underline">
+                {footerData.contact.email}
+              </Link>
             </p>
             <p className="flex items-center gap-2 mb-2">
-              <FaPhone className="text-[#D4AF37]" /> {footerData.contact.phone}
+              <FaPhone className="text-[#D4AF37]" /> 
+              <Link href={`tel:${footerData.contact.phone.replace(/\s+/g, '')}`} className="hover:underline">
+                {footerData.contact.phone}
+              </Link>
             </p>
             <p className="flex items-start gap-2">
-              <FiMapPin className="text-[#D4AF37] lg:text-xl mt-1" /> {footerData.contact.address}
+              <FiMapPin className="text-[#D4AF37] lg:text-xl mt-1" /> 
+              {footerData.contact.address}
             </p>
 
             {/* Newsletter */}
@@ -109,8 +134,13 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Activities</h3>
             <ul className="mb-6 space-y-2">
               {footerData.activities.map((item) => (
-                <li key={item} className="hover:text-[#D4AF37] cursor-pointer transition-colors duration-300">
-                  {item}
+                <li key={item.path}>
+                  <Link 
+                    href={item.path} 
+                    className="hover:text-[#D4AF37] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -118,8 +148,13 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block md:mt-12">Network</h3>
             <ul className="space-y-2">
               {footerData.network.map((item) => (
-                <li key={item} className="hover:text-[#D4AF37] cursor-pointer transition-colors duration-300">
-                  {item}
+                <li key={item.path}>
+                  <Link 
+                    href={item.path} 
+                    className="hover:text-[#D4AF37] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -130,8 +165,13 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Explore our site</h3>
             <ul className="space-y-2">
               {footerData.explore.map((item) => (
-                <li key={item} className="hover:text-[#D4AF37] cursor-pointer transition-colors duration-300">
-                  {item}
+                <li key={item.path}>
+                  <Link 
+                    href={item.path} 
+                    className="hover:text-[#D4AF37] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -142,11 +182,14 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Recent posts</h3>
             <div className="space-y-4">
               {footerData.posts.map((post) => (
-                <div key={post.title} className="border-b border-[#D4AF37]/20 pb-4">
+                <div key={post.path} className="border-b border-[#D4AF37]/20 pb-4">
                   <p className="text-sm text-[#F9F9F9]/70">{post.date}</p>
-                  <p className="hover:text-[#D4AF37] cursor-pointer transition-colors duration-300">
+                  <Link 
+                    href={post.path} 
+                    className="hover:text-[#D4AF37] transition-colors duration-300"
+                  >
                     {post.title}
-                  </p>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -154,13 +197,13 @@ export default function Footer() {
               <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Follow us</h3>
               <div className="flex space-x-4">
                 {footerData.socialIcons.map((social, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={social.link}
                     className="text-[#F9F9F9] hover:text-[#D4AF37] text-xl transition-colors duration-300"
                   >
                     <social.icon />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -169,7 +212,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 text-center text-sm text-[#F9F9F9]/80">
-          Please <a href="#" className="text-[#D4AF37] hover:underline">click here</a> to view our Terms of Use - Copyright © 2017 - 2025
+          Please <Link href="/terms" className="text-[#D4AF37] hover:underline">click here</Link> to view our Terms of Use - Copyright © 2017 - 2025
         </div>
       </footer>
     </div>

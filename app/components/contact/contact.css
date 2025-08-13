@@ -54,17 +54,6 @@ input[type="checkbox"] {
   border-color: #0D1B2A;
 }
 
-/* Buttons */
-button {
-  background-color: #D4AF37;
-  color: #0D1B2A;
-  transition: all 0.3s ease;
-}
-button:hover {
-  background-color: #0D1B2A;
-  color: #D4AF37;
-  border: 1px solid #D4AF37;
-}
 
 
 /* Circular right-side contact container */

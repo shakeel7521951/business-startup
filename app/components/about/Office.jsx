@@ -5,20 +5,21 @@ export const Offices = () => {
         {
             country: "Qatar",
             address: "West Bay, Doha",
-            contact: "+974 1234 5678",
-            email: "qatar@consultancy.com"
+            contact: "+974 5034 3737",
+            email: "info@businessstartupqatar.com"
+            
         },
         {
             country: "Oman",
             address: "Muscat Business District",
-            contact: "+968 2345 6789",
-            email: "oman@consultancy.com"
+            contact: "+974 5034 3737",
+            email: "info@businessstartupoman.com"
         },
         {
             country: "Saudi Arabia",
             address: "King Abdullah Road, Riyadh",
-            contact: "+966 3456 7890",
-            email: "ksa@consultancy.com"
+            contact: "+966535455461",
+            email: "info@businessstartupsaudiarabia.com"
         }
     ];
 

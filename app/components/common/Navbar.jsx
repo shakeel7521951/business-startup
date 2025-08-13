@@ -2,10 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import { FaChevronDown, FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activitiesOpen, setActivitiesOpen] = useState(false);
+  const [networkOpen, setNetworkOpen] = useState(false);
 
   return (
     <header className="bg-[#0D1B2A] text-[#F9F9F9] relative">
@@ -21,11 +23,11 @@ export default function Navbar() {
           unoptimized={true}
         />
       </div>
-      <div className="flex justify-between gap-15 items-center px-4 py-4 pb-5 max-w-7xl mx-auto relative z-100">
+      <div className="flex justify-between gap-15 items-center px-4 py-2 max-w-7xl mx-auto relative z-100">
         {/* Logo */}
         <Link href="/">
-          <div className="flex items-center">
-            <img src="../navbar/logo.svg" alt="Logo" className="h-14 w-full" />
+          <div className="flex items-center -mb-1">
+            <img src="../navbar/logo.png" alt="Logo" className="h-20" />
           </div>
         </Link>
 
@@ -39,11 +41,10 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center space-x-6">
             <Link href="/" className="hover:text-[#D4AF37]">Home</Link>
             <Link href="/about" className="hover:text-[#D4AF37]">About</Link>
-            <Link href="/oman" className="hover:text-[#D4AF37]">Oman</Link>
-
+            
             <div className="relative group">
               <button className="flex items-center hover:text-[#D4AF37]">
-                Activites <FaChevronDown className="ml-1 text-xs" />
+                Activites <FaChevronDown className="ml-1 text-xs mt-1" />
               </button>
               <div className="absolute top-6 left-0 hidden group-hover:block bg-white rounded px-6 py-2 z-10 text-nowrap shadow-lg">
                 <Link href="/activities/preparation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Preparation</Link>
@@ -55,18 +56,18 @@ export default function Navbar() {
 
             <Link href="/initiatives" className="hover:text-[#D4AF37]">Initiatives</Link>
 
-            <div className="relative group ">
+            <div className="relative group">
               <button className="flex items-center hover:text-[#D4AF37]">
-                Network <FaChevronDown className="ml-1 text-xs" />
+                Network <FaChevronDown className="ml-1 text-xs mt-1" />
               </button>
               <div className="absolute top-6 left-0 hidden group-hover:block bg-white rounded px-5 py-2 z-10 text-nowrap shadow-lg">
-                <Link href="/partner1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Education Institutions</Link>
-                <Link href="/partner1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Business Councils</Link>
-                <Link href="/partner1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Government & Semi-Governmental Entities</Link>
-                <Link href="/partner1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Experts & Specialists</Link>
-                <Link href="/partner1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Financiers & Investors</Link>
-                <Link href="/partner1" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Banks & Financial Institutions</Link>
-                <Link href="/partner2" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Incubators & Accelerators</Link>
+                <Link href="/networks/education-institutions" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Education Institutions</Link>
+                <Link href="/networks/business-councils" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Business Councils</Link>
+                <Link href="/networks/government-entities" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Government & Semi-Governmental Entities</Link>
+                <Link href="/networks/experts-and-specialists" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Experts & Specialists</Link>
+                <Link href="/networks/finance-investors" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Financiers & Investors</Link>
+                <Link href="/networks/banks-financial-institutions" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Banks & Financial Institutions</Link>
+                <Link href="/networks/incubators-accelerators" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Incubators & Accelerators</Link>
               </div>
             </div>
 
@@ -84,20 +85,58 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden px-4 pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top ">
-
+        <nav className="lg:hidden px-4 pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top">
           <Link href="/" className="block hover:text-[#D4AF37] py-2">Home</Link>
           <Link href="/about" className="block hover:text-[#D4AF37] py-2">About</Link>
-          <Link href="/oman" className="block hover:text-[#D4AF37] py-2">Oman</Link>
-          <Link href="/activities" className="block hover:text-[#D4AF37] py-2">Activities</Link>
+                    
+          {/* Activities Mobile Submenu */}
+          <div className="block">
+            <button 
+              className="flex items-center justify-between w-full hover:text-[#D4AF37] py-2"
+              onClick={() => setActivitiesOpen(!activitiesOpen)}
+            >
+              <span>Activities</span>
+              <FaChevronRight className={`transition-transform duration-200 ${activitiesOpen ? 'rotate-90' : ''}`} />
+            </button>
+            {activitiesOpen && (
+              <div className="pl-4 space-y-2">
+                <Link href="/activities/preparation" className="block hover:text-[#D4AF37] py-1">Preparation</Link>
+                <Link href="/activities/formation" className="block hover:text-[#D4AF37] py-1">Formation</Link>
+                <Link href="/activities/expension" className="block hover:text-[#D4AF37] py-1">Expansion</Link>
+                <Link href="/activities/transition" className="block hover:text-[#D4AF37] py-1">Transition</Link>
+              </div>
+            )}
+          </div>
+
           <Link href="/initiatives" className="block hover:text-[#D4AF37] py-2">Initiatives</Link>
-          <Link href="/network" className="block hover:text-[#D4AF37] py-2">Network</Link>
+          
+          {/* Network Mobile Submenu */}
+          <div className="block">
+            <button 
+              className="flex items-center justify-between w-full hover:text-[#D4AF37] py-2"
+              onClick={() => setNetworkOpen(!networkOpen)}
+            >
+              <span>Network</span>
+              <FaChevronRight className={`transition-transform duration-200 ${networkOpen ? 'rotate-90' : ''}`} />
+            </button>
+            {networkOpen && (
+              <div className="pl-4 space-y-2">
+                <Link href="/networks/education-institutions" className="block hover:text-[#D4AF37] py-1">Education Institutions</Link>
+                <Link href="/networks/business-councils" className="block hover:text-[#D4AF37] py-1">Business Councils</Link>
+                <Link href="/networks/government-entities" className="block hover:text-[#D4AF37] py-1">Government & Semi-Governmental Entities</Link>
+                <Link href="/networks/experts-and-specialists" className="block hover:text-[#D4AF37] py-1">Experts & Specialists</Link>
+                <Link href="/networks/finance-investors" className="block hover:text-[#D4AF37] py-1">Financiers & Investors</Link>
+                <Link href="/networks/banks-financial-institutions" className="block hover:text-[#D4AF37] py-1">Banks & Financial Institutions</Link>
+                <Link href="/networks/incubators-accelerators" className="block hover:text-[#D4AF37] py-1">Incubators & Accelerators</Link>
+              </div>
+            )}
+          </div>
+
           <Link href="/news" className="block hover:text-[#D4AF37] py-2">News</Link>
           <Link href="/events" className="block hover:text-[#D4AF37] py-2">Events</Link>
           <Link href="/contact" className="block hover:text-[#D4AF37] py-2">Contact</Link>
         </nav>
-      )
-      }
-    </header >
+      )}
+    </header>
   );
 }
