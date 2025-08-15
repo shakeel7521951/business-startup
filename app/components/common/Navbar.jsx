@@ -27,7 +27,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center -mb-1">
-            <img src="../navbar/logo.png" alt="Logo" className="h-20" />
+            <img src="../navbar/logo.png" alt="Logo" className="h-20 max-md:h-12" />
           </div>
         </Link>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden px-4 pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top">
+        <nav className="lg:hidden px-6 pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top">
           <Link href="/" className="block hover:text-[#D4AF37] py-2">Home</Link>
           <Link href="/about" className="block hover:text-[#D4AF37] py-2">About</Link>
                     
