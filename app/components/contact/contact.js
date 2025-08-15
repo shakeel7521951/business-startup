@@ -10,20 +10,17 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full sm:h-[850px] h-[650px] overflow-hidden">
+      <div className="w-full sm:h-[650px] h-[650px] overflow-hidden">
         {/* Background Image */}
         <img
           src="./contact/contact.jpg"
           alt="News Background"
           className="w-full h-full object-cover"
         />
-
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 w-full h-[450px] bg-gradient-to-t from-[#F9F9F9] to-transparent"></div>
       </div>
 
       {/* Form Section */}
-      <div className="relative z-20 -mt-[150px] flex justify-center select-none ">
+      <div className=" flex justify-center select-none ">
         <div className="bg-[#F9F9F9] p-1 w-full max-w-[1140px] rounded-tl-lg rounded-tr-lg">
           <div className="flex flex-col lg:flex-row justify-center py-3 gap-6">
             {/* Left side */}
@@ -159,9 +156,7 @@ export default function Contact() {
                 className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
               />
               <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
-                <option  value="">
-                  Company Size
-                </option>
+                <option value="">Company Size</option>
                 <option value="0-10">0-10 Employees</option>
                 <option value="10-50">10-50 Employees</option>
                 <option value="50-200">50-200 Employees</option>
@@ -175,9 +170,7 @@ export default function Contact() {
                 className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
               />
               <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
-                <option value="">
-                  Activities interested in
-                </option>
+                <option value="">Activities interested in</option>
                 <option value="Preparation">Preparation</option>
                 <option value="Formation">Formation</option>
                 <option value="Expension">Expension</option>
@@ -190,9 +183,7 @@ export default function Contact() {
                 className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
               />
               <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
-                <option value="">
-                  Sub Activity interested in
-                </option>
+                <option value="">Sub Activity interested in</option>
                 <option value="market-research">Market Research</option>
                 <option value="financial">Financial Planning</option>
                 <option value="team">Team Recruitment</option>

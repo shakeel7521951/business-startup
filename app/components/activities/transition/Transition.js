@@ -30,22 +30,6 @@ export default function Transition() {
           </div>
 
           <p className="text-white text-justify text-lg leading-relaxed mb-6">
-            We prepare and provide an overview of relevant events and
-            initiatives for businesses and key stakeholders in the GCC ecosystem
-            (Oman, Qatar, and Saudi Arabia). Please contact our local experts to
-            submit your event for consideration. We're pleased to showcase
-            valuable opportunities across the region.
-          </p>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="flex justify-center select-none bg-[#F9F9F9] py-12">
-        <div className="px-4 sm:px-8 max-w-screen-xl w-full flex flex-col items-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-6">
-            Transition
-          </h2>
-          <p className="text-gray-700 leading-relaxed max-w-5xl mb-12 text-center">
             <strong>Transition</strong> involves careful planning and execution
             to smoothly shift from one phase of business operations to another.
             This includes comprehensive market research to understand evolving
@@ -58,7 +42,12 @@ export default function Transition() {
             customer trust, and sets a solid foundation for sustainable growth
             in the next stage.
           </p>
+        </div>
+      </div>
 
+      {/* Content */}
+      <div className="flex justify-center select-none bg-[#F9F9F9] py-12">
+        <div className="px-4 sm:px-8 max-w-screen-xl w-full flex flex-col items-center">
           {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 w-full">
             {transitionData.slice(0, visibleCount).map((blog, idx) => (
@@ -128,7 +117,7 @@ export default function Transition() {
           <div className="bg-[#F9F9F9] w-full py-10 mb-5 ">
             <div className="flex justify-center ">
               <img
-                src="https://images.unsplash.com/photo-1637489981573-e45e9297cb21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nbyUyMGNvbXBhbmh8ZW58MHwwfDB8fHww" // Replace with your actual logo path
+                src="/navbar/logo.png"
                 alt="Company Logo"
                 className="w-48 h-auto opacity-90 hover:opacity-100 transition duration-500 rounded-full"
               />
