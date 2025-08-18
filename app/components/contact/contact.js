@@ -189,7 +189,7 @@ export default function Contact() {
                 className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
              focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               >
-                <option value="">Activities interested in</option>
+                <option value="">services interested in</option>
                 <option value="Preparation">Preparation</option>
                 <option value="Formation">Formation</option>
                 <option value="Expension">Expension</option>

@@ -6,7 +6,7 @@ export const Team = () => {
             name: "Ahmed Al-Mansoori",
             role: "Founder & CEO",
             bio: "20+ years in GCC corporate law with expertise in cross-border business establishment. Former legal advisor to QFC and QIA.",
-            image: "/about/header.jpg",
+            image: "/about/image (1).jpg",
             social: {
                 linkedin: "#",
                 twitter: "#",
@@ -17,7 +17,7 @@ export const Team = () => {
             name: "Sarah Al-Hashimi",
             role: "Digital Director",
             bio: "Leads Nerou technology division with 15 years experience in digital transformation for GCC enterprises.",
-            image: "/about/header.jpg",
+            image: "/about/image (4).jpg",
             social: {
                 linkedin: "#",
                 twitter: "#",
@@ -28,7 +28,7 @@ export const Team = () => {
             name: "Khalid Al-Rashidi",
             role: "KSA Country Manager",
             bio: "Specialized in Saudi business regulations with deep connections in Riyadh's business community.",
-            image: "/about/header.jpg",
+            image: "/about/image (7).jpg",
             social: {
                 linkedin: "#",
                 twitter: "#",

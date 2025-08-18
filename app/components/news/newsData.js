@@ -508,7 +508,7 @@ const newsData = [
           few days, compared to the weeks or months previously required.
           Entrepreneurs will be able to apply online, submit necessary documents
           digitally, and receive immediate preliminary approvals to start their
-          business activities.
+          business services.
         </p>
 
         {/* Quote */}

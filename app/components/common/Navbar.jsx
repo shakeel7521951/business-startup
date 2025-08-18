@@ -6,7 +6,7 @@ import { FaChevronDown, FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activitiesOpen, setActivitiesOpen] = useState(false);
+  const [servicesOpen, setservicesOpen] = useState(false);
   const [networkOpen, setNetworkOpen] = useState(false);
 
   return (
@@ -44,13 +44,13 @@ export default function Navbar() {
             
             <div className="relative group">
               <button className="flex items-center hover:text-[#D4AF37]">
-                Activites <FaChevronDown className="ml-1 text-xs mt-1" />
+                Services <FaChevronDown className="ml-1 text-xs mt-1" />
               </button>
               <div className="absolute top-6 left-0 hidden group-hover:block bg-white rounded px-6 py-2 z-10 text-nowrap shadow-lg">
-                <Link href="/activities/preparation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Preparation</Link>
-                <Link href="/activities/formation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Formation</Link>
-                <Link href="/activities/expension" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Expansion</Link>
-                <Link href="/activities/transition" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Transition</Link>
+                <Link href="/services/preparation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Preparation</Link>
+                <Link href="/services/formation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Formation</Link>
+                <Link href="/services/expension" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Expansion</Link>
+                <Link href="/services/transition" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Transition</Link>
               </div>
             </div>
 
@@ -89,21 +89,21 @@ export default function Navbar() {
           <Link href="/" className="block hover:text-[#D4AF37] py-2">Home</Link>
           <Link href="/about" className="block hover:text-[#D4AF37] py-2">About</Link>
                     
-          {/* Activities Mobile Submenu */}
+          {/* services Mobile Submenu */}
           <div className="block">
             <button 
               className="flex items-center justify-between w-full hover:text-[#D4AF37] py-2"
-              onClick={() => setActivitiesOpen(!activitiesOpen)}
+              onClick={() => setservicesOpen(!servicesOpen)}
             >
-              <span>Activities</span>
-              <FaChevronRight className={`transition-transform duration-200 ${activitiesOpen ? 'rotate-90' : ''}`} />
+              <span>Services</span>
+              <FaChevronRight className={`transition-transform duration-200 ${servicesOpen ? 'rotate-90' : ''}`} />
             </button>
-            {activitiesOpen && (
+            {servicesOpen && (
               <div className="pl-4 space-y-2">
-                <Link href="/activities/preparation" className="block hover:text-[#D4AF37] py-1">Preparation</Link>
-                <Link href="/activities/formation" className="block hover:text-[#D4AF37] py-1">Formation</Link>
-                <Link href="/activities/expension" className="block hover:text-[#D4AF37] py-1">Expansion</Link>
-                <Link href="/activities/transition" className="block hover:text-[#D4AF37] py-1">Transition</Link>
+                <Link href="/services/preparation" className="block hover:text-[#D4AF37] py-1">Preparation</Link>
+                <Link href="/services/formation" className="block hover:text-[#D4AF37] py-1">Formation</Link>
+                <Link href="/services/expension" className="block hover:text-[#D4AF37] py-1">Expansion</Link>
+                <Link href="/services/transition" className="block hover:text-[#D4AF37] py-1">Transition</Link>
               </div>
             )}
           </div>
