@@ -141,7 +141,7 @@ export default function GCCMapSection() {
                                 className={`absolute top-1/2 left-1/4 w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 ${activeCountry === 'qatar' ? 'bg-[#D4AF37] scale-110 shadow-lg' : 'bg-[#0D1B2A]'}`}
                                 style={{ transform: activeCountry === 'qatar' ? 'translate(-50%, -50%) scale(1.1)' : 'translate(-50%, -50%)' }}
                             >
-                                <span className="text-white text-xl">SA</span>
+                                <span className="text-white text-xl">QA</span>
                             </button>
 
                             <button
@@ -149,7 +149,7 @@ export default function GCCMapSection() {
                                 className={`absolute top-1/3 left-1/2 w-24 h-24 rounded-full flex items-center justify-center transition-all duration-300 ${activeCountry === 'saudi' ? 'bg-[#D4AF37] scale-110 shadow-lg' : 'bg-[#0D1B2A]'}`}
                                 style={{ transform: activeCountry === 'saudi' ? 'translate(-50%, -50%) scale(1.1)' : 'translate(-50%, -50%)' }}
                             >
-                                <span className="text-white text-2xl">QA</span>
+                                <span className="text-white text-2xl">SA</span>
                             </button>
 
                             <button
