@@ -23,7 +23,7 @@ export default function Navbar() {
           unoptimized={true}
         />
       </div>
-      <div className="flex justify-between gap-15 items-center px-4 py-2 max-w-7xl mx-auto relative z-100">
+      <div className="flex justify-between items-center px-5 pe-10 py-2 max-w-7xl mx-auto relative z-100">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center -mb-1">
@@ -41,7 +41,7 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center space-x-6">
             <Link href="/" className="hover:text-[#D4AF37]">Home</Link>
             <Link href="/about" className="hover:text-[#D4AF37]">About</Link>
-            
+
             <div className="relative group">
               <button className="flex items-center hover:text-[#D4AF37]">
                 Services <FaChevronDown className="ml-1 text-xs mt-1" />
@@ -53,8 +53,6 @@ export default function Navbar() {
                 <Link href="/services/transition" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Transition</Link>
               </div>
             </div>
-
-            <Link href="/initiatives" className="hover:text-[#D4AF37]">Initiatives</Link>
 
             <div className="relative group">
               <button className="flex items-center hover:text-[#D4AF37]">
@@ -71,6 +69,8 @@ export default function Navbar() {
               </div>
             </div>
 
+            <Link href="/initiatives" className="hover:text-[#D4AF37]">Initiatives</Link>
+
             <Link href="/news" className="hover:text-[#D4AF37]">News</Link>
             <Link href="/events" className="hover:text-[#D4AF37]">Events</Link>
             <Link href="/contact" className="hover:text-[#D4AF37]">Contact</Link>
@@ -85,13 +85,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden px-6 pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top">
+        <nav className="lg:hidden px-6 md:px-12  pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top">
           <Link href="/" className="block hover:text-[#D4AF37] py-2">Home</Link>
           <Link href="/about" className="block hover:text-[#D4AF37] py-2">About</Link>
-                    
+
           {/* services Mobile Submenu */}
           <div className="block">
-            <button 
+            <button
               className="flex items-center justify-between w-full hover:text-[#D4AF37] py-2"
               onClick={() => setservicesOpen(!servicesOpen)}
             >
@@ -108,11 +108,10 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/initiatives" className="block hover:text-[#D4AF37] py-2">Initiatives</Link>
-          
+
           {/* Network Mobile Submenu */}
           <div className="block">
-            <button 
+            <button
               className="flex items-center justify-between w-full hover:text-[#D4AF37] py-2"
               onClick={() => setNetworkOpen(!networkOpen)}
             >
@@ -131,6 +130,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
+          <Link href="/initiatives" className="block hover:text-[#D4AF37] py-2">Initiatives</Link>
 
           <Link href="/news" className="block hover:text-[#D4AF37] py-2">News</Link>
           <Link href="/events" className="block hover:text-[#D4AF37] py-2">Events</Link>

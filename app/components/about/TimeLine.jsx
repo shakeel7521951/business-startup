@@ -95,7 +95,7 @@ export const Timeline = () => {
                                             src={milestone.image}
                                             alt={milestone.title}
                                             fill
-                                            className=" transition-transform duration-700 group-hover:scale-105"
+                                            className=" object-center transition-transform duration-700 group-hover:scale-105"
                                             quality={80}
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/90 via-[#0D1B2A]/30 to-transparent p-8 flex items-end transition-all duration-500 group-hover:from-[#0D1B2A]/95">

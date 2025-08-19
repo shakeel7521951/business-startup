@@ -65,7 +65,7 @@ export const Team = () => {
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    className="w-full h-full transition-transform duration-500 group-hover:scale-105"
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/90 via-[#0D1B2A]/30 to-transparent flex items-end p-6">
