@@ -4,7 +4,7 @@ import {
   PhoneIcon,
   MapPinIcon,
 } from "@heroicons/react/24/outline";
-import "./contact.css";
+
 
 export default function Contact() {
   return (
@@ -20,8 +20,8 @@ export default function Contact() {
       </div>
 
       {/* Form Section */}
-      <div className=" flex justify-center select-none ">
-        <div className="bg-[#F9F9F9] p-1 w-full max-w-[1140px] rounded-tl-lg rounded-tr-lg">
+      <div className=" flex justify-center select-none bg-[#F9F9F9] font-sans ">
+        <div className="bg-[#F9F9F9] p-1 w-full max-w-[1140px] rounded-lg rounded-tr-lg">
           <div className="flex flex-col lg:flex-row justify-center py-3 gap-6">
             {/* Left side */}
             <div className="flex-1 bg-[#F9F9F9] p-6 sm:p-10 rounded-lg">
@@ -65,37 +65,46 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="block w-full rounded-lg border !bg-[#f4eeeec7] border-[#0D1B2A] px-3 py-2 text-sm focus:border-[#D4AF37] focus:ring-[#D4AF37]"
+                  className="block w-full rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:ring-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
                 />
+
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="block w-full rounded-lg border !bg-[#f4eeeec7] border-[#0D1B2A] px-3 py-2 text-sm focus:border-[#D4AF37] focus:ring-[#D4AF37]"
+                  className="block w-full rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:ring-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
                 />
 
                 {/* Captcha */}
-                <div className="col-span-2 ">
-                  <div className="w-full !bg-[#f4eeeec7] max-w-xs border border-[#0D1B2A] rounded shadow-sm p-2 flex items-center justify-between ">
+                <div className="col-span-2">
+                  <div className="w-full !bg-[#f4eeeec7] max-w-xs border border-[#0D1B2A] rounded shadow-sm p-2 flex items-center justify-between">
                     <div className="flex items-center space-x-3 ml-3">
                       <input
                         type="checkbox"
-                        className="w-7 h-7 border-2 border-[#0D1B2A] rounded-sm appearance-none"
+                        className="w-7 h-7 sm:w-7 sm:h-7 border-2 border-[#D4AF37] rounded-sm appearance-none"
                       />
-                      <span className="text-sm font-semibold tracking-tight">
+                      <span className="text-sm sm:text-sm font-semibold text-[#0D1B2A] tracking-tight">
                         I'm not a robot
                       </span>
                     </div>
-                    <div className="flex flex-col items-center text-[10px] text-gray-500">
+                    <div className="flex flex-col items-center text-[10px] sm:text-[10px] text-gray-500">
                       <img
                         src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
                         alt="reCAPTCHA"
-                        className="w-7 h-7"
+                        className="w-7 h-7 sm:w-7 sm:h-7"
                       />
-                      <span>reCAPTCHA</span>
+                      <span className="font-semibold text-[#D4AF37]">
+                        reCAPTCHA
+                      </span>
                       <div className="flex space-x-1">
-                        <a href="#">Privacy</a>
+                        <a href="#" className="hover:underline text-[#0D1B2A]">
+                          Privacy
+                        </a>
                         <span>-</span>
-                        <a href="#">Terms</a>
+                        <a href="#" className="hover:underline text-[#0D1B2A]">
+                          Terms
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -142,20 +151,26 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="First Name"
-                className="rounded-tl-lg sm:rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="Industry"
-                className="rounded-tr-lg sm:rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               />
 
               <input
                 type="text"
                 placeholder="Last Name"
-                className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               />
-              <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
+              <select
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
+              >
                 <option value="">Company Size</option>
                 <option value="0-10">0-10 Employees</option>
                 <option value="10-50">10-50 Employees</option>
@@ -167,10 +182,14 @@ export default function Contact() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               />
-              <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
-                <option value="">Activities interested in</option>
+              <select
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
+              >
+                <option value="">services interested in</option>
                 <option value="Preparation">Preparation</option>
                 <option value="Formation">Formation</option>
                 <option value="Expension">Expension</option>
@@ -180,9 +199,13 @@ export default function Contact() {
               <input
                 type="tel"
                 placeholder="Telephone"
-                className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               />
-              <select className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full">
+              <select
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
+              >
                 <option value="">Sub Activity interested in</option>
                 <option value="market-research">Market Research</option>
                 <option value="financial">Financial Planning</option>
@@ -194,44 +217,52 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Organization"
-                className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="Subject"
-                className="rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className="w-full rounded-lg sm:rounded-lg border border-[#0D1B2A] bg-[#F9F9F9] px-3 py-2 text-sm 
+             focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none"
               />
 
               <textarea
                 rows="5"
                 placeholder="Message"
-                className="col-span-1 sm:col-span-2 rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
+                className=" focus:border-[#D4AF37] focus:shadow-[0_0_8px_rgba(212,175,55,0.5)] focus:outline-none p-2  col-span-1 sm:col-span-2 rounded-lg border border-[#0D1B2A] bg-[#f4eeeec7] px-3 py-2 text-sm w-full"
               ></textarea>
 
               {/* Captcha */}
               <div className="col-span-1 sm:col-span-2 ">
                 <div className="w-full !bg-[#f4eeeec7] max-w-xs border border-[#0D1B2A] rounded shadow-sm p-2 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="checkbox"
-                      className="w-6 h-6 border-2 border-[#0D1B2A] rounded-sm appearance-none"
-                    />
-                    <span className="text-sm font-semibold tracking-tight">
-                      I'm not a robot
-                    </span>
-                  </div>
-                  <div className="flex flex-col items-center text-[10px] text-gray-500">
-                    <img
-                      src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
-                      alt="reCAPTCHA"
-                      className="w-7 h-7"
-                    />
-                    <span>reCAPTCHA</span>
-                    <div className="flex space-x-1">
-                      <a href="#">Privacy</a>
-                      <span>-</span>
-                      <a href="#">Terms</a>
+                  <div className="flex items-center space-x-3 ml-3">
+                   <input
+                        type="checkbox"
+                        className="w-7 h-7 sm:w-7 sm:h-7 border-2 border-[#D4AF37] rounded-sm appearance-none"
+                      />
+                      <span className="text-sm sm:text-sm font-semibold text-[#0D1B2A] tracking-tight">
+                        I'm not a robot
+                      </span>
                     </div>
+                    <div className="flex flex-col items-center text-[10px] sm:text-[10px] text-gray-500">
+                      <img
+                        src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                        alt="reCAPTCHA"
+                        className="w-7 h-7 sm:w-7 sm:h-7"
+                      />
+                      <span className="font-semibold text-[#D4AF37]">
+                        reCAPTCHA
+                      </span>
+                      <div className="flex space-x-1">
+                        <a href="#" className="hover:underline text-[#0D1B2A]">
+                          Privacy
+                        </a>
+                        <span>-</span>
+                        <a href="#" className="hover:underline text-[#0D1B2A]">
+                          Terms
+                        </a>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -251,15 +282,15 @@ export default function Contact() {
       </div>
 
       {/* Location Section */}
-      <div className="location-section overflow-hidden bg-[#0D1B2A] py-10">
-        <h2 className="location-title text-[#F9F9F9] text-center text-3xl mb-6">
+      <div className=" overflow-hidden bg-[#0D1B2A] py-10">
+        <h2 className="text-[#F9F9F9] text-center text-3xl mb-6">
           The Destination
         </h2>
-        <div className="map-container overflow-hidden px-5">
+        <div className="overflow-hidden px-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111256.59449794296!2d71.60761016532268!3d29.377064565810574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90c46c611ad5%3A0xfcdf0da8e103f862!2sBahawalpur%2C%20Pakistan!5e0!3m2!1sen!2s!4v1754719121764!5m2!1sen!2s"
             loading="lazy"
-            style={{ border: "4px solid #D4AF37", borderRadius: "8px" }}
+            className="w-full h-[400px] border-4 border-[#D4AF37] rounded-lg"
           ></iframe>
         </div>
       </div>

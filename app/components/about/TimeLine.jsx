@@ -11,28 +11,28 @@ export const Timeline = () => {
             title: "Qatar Foundation",
             description: "Established in Doha with 5 founding members",
             icon: <FaBuilding className="text-3xl" />,
-            image: "/about/header.jpg"
+            image: "/about/image (5).jpg"
         },
         {
             year: "2018",
             title: "Oman Expansion",
             description: "Opened Muscat office serving 100+ clients",
             icon: <FaGlobeAmericas className="text-3xl" />,
-            image: "/about/header.jpg"
+            image: "/about/image (2).jpg"
         },
         {
             year: "2021",
             title: "Nerou Launch",
             description: "Launched our digital solutions division",
             icon: <FaRobot className="text-3xl" />,
-            image: "/about/header.jpg"
+            image: "/about/image (8).jpg"
         },
         {
             year: "2023",
             title: "KSA Operation",
             description: "Obtained full Saudi business consultancy license",
             icon: <FaLandmark className="text-3xl" />,
-            image: "/about/header.jpg"
+            image: "/about/image (3).jpg"
         }
     ];
 
@@ -95,7 +95,7 @@ export const Timeline = () => {
                                             src={milestone.image}
                                             alt={milestone.title}
                                             fill
-                                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                            className=" transition-transform duration-700 group-hover:scale-105"
                                             quality={80}
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/90 via-[#0D1B2A]/30 to-transparent p-8 flex items-end transition-all duration-500 group-hover:from-[#0D1B2A]/95">

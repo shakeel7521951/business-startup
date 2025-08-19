@@ -10,18 +10,18 @@ const footerData = {
     phone: "+974 5034 3737",
     address: "Business Start Up in association with Shorouk Media, Level 18, Tornado Tower, West Bay, Doha, Qatar",
   },
-  activities: [
-    { name: "Preparation", path: "/activities/preparation" },
-    { name: "Formation", path: "/activities/formation" },
-    { name: "Expansion", path: "/activities/expension" },
-    { name: "Transition", path: "/activities/transition" }
+  services: [
+    { name: "Preparation", path: "/services/preparation" },
+    { name: "Formation", path: "/services/formation" },
+    { name: "Expansion", path: "/services/expension" },
+    { name: "Transition", path: "/services/transition" }
   ],
   explore: [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Saudi Arabia", path: "/saudi-arabia" },
-    { name: "Oman", path: "/oman" },
-    { name: "Qatar", path: "/qatar" },
+    // { name: "Saudi Arabia", path: "/saudi-arabia" },
+    // { name: "Oman", path: "/oman" },
+    // { name: "Qatar", path: "/qatar" },
     { name: "Initiatives", path: "/initiatives" },
     { name: "News", path: "/news" },
     { name: "Events", path: "/events" },
@@ -129,11 +129,11 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Activities & Network */}
+          {/* services & Network */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Activities</h3>
+            <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Services</h3>
             <ul className="mb-6 space-y-2">
-              {footerData.activities.map((item) => (
+              {footerData.services.map((item) => (
                 <li key={item.path}>
                   <Link 
                     href={item.path} 

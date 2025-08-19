@@ -2,14 +2,14 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 
-export default function Activities() {
+export default function services() {
     const [hoveredCard, setHoveredCard] = useState(null);
     const stages = [
         {
             id: 1,
             title: 'Formation',
-            description: 'The activities in the first stage of the business life-cycle are focused on developing and implementing a business or project. This includes planning, market research, and forming initial partnerships. If you need more details, feel free to explore further or contact our experts!',
-            image: '/activities/one.jfif',
+            description: 'The services in the first stage of the business life-cycle are focused on developing and implementing a business or project. This includes planning, market research, and forming initial partnerships. If you need more details, feel free to explore further or contact our experts!',
+            image: '/services/one.jfif',
             stage: 'First Stage',
             color: 'from-[#0D1B2A]/90 to-[#1C1C1C]/90',
             url:'/formation'
@@ -17,8 +17,8 @@ export default function Activities() {
         {
             id: 2,
             title: 'Preparation',
-            description: 'In this second stage, activities are aimed at helping the business initiator decide whether to proceed with development. This involves assessing feasibility, securing initial resources, and refining the business model. Contact our experts to discuss your next steps!',
-            image: '/activities/two.jfif',
+            description: 'In this second stage, services are aimed at helping the business initiator decide whether to proceed with development. This involves assessing feasibility, securing initial resources, and refining the business model. Contact our experts to discuss your next steps!',
+            image: '/services/two.jfif',
             stage: 'Second Stage',
             color: 'from-[#D4AF37]/90 to-[#0D1B2A]/90'
         },
@@ -26,7 +26,7 @@ export default function Activities() {
             id: 3,
             title: 'Transition',
             description: 'This stage focuses on managing changes in the business environment—both internal and external. Whether scaling, entering new markets, or preparing for liquidation, we can guide you through the process. Reach out for expert support on navigating these transitions.',
-            image: '/activities/three.jfif',
+            image: '/services/three.jfif',
             stage: 'Third Stage',
             color: 'from-[#D4AF37]/90 to-[#1C1C1C]/90'
         },
@@ -34,7 +34,7 @@ export default function Activities() {
             id: 4,
             title: 'Expansion',
             description: 'The fourth stage focuses on scaling the business, whether by expanding market reach, diversifying products, or entering new territories. Strategic planning is crucial for continued success. Connect with us to ensure a smooth and effective expansion!',
-            image: '/activities/four.jfif',
+            image: '/services/four.jfif',
             stage: 'Fourth Stage',
             color: 'from-[#1C1C1C]/90 to-[#D4AF37]/90'
         }

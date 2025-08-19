@@ -13,10 +13,10 @@ const Header = () => {
                 <div className="absolute inset-0 overflow-hidden z-0">
                     {/* Header Image */}
                     <Image
-                        src="/about/header.jpg"
+                        src="/about/header (2).jpg"
                         alt="Luxury gold texture"
                         fill
-                        className="object-repeat opacity-25 object-cover"
+                        className="object-repeat opacity-25 "
                         quality={10}
                         unoptimized 
                     />
