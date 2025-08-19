@@ -300,7 +300,7 @@ export default function Contact() {
               </div>
 
               {/* Submit */}
-              <div className="col-span-1 sm:col-span-2 flex justify-center sm:justify-start">
+              <div className="col-span-1 sm:col-span-2 flex mb-3 justify-center sm:justify-start">
                 <button
                   type="submit"
                   className="bg-[#D4AF37] text-[#0D1B2A] font-semibold px-5 py-2 rounded-lg hover:bg-[#0D1B2A] hover:text-[#D4AF37] border border-transparent hover:border-[#D4AF37] transition duration-200 w-full sm:w-auto"
