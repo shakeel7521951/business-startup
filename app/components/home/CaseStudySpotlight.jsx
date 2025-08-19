@@ -18,14 +18,12 @@ export function CaseStudySpotlight() {
                         <div
                             className="md:w-2/5 p-8 flex items-center relative overflow-hidden"
                             style={{
-                                background: `linear-gradient(rgba(13, 27, 42, 0.8), rgba(28, 28, 28, 0.9)), url(/home/success.jpg)`,
+                                background: `linear-gradient(rgba(13, 27, 42, 0.8), rgba(28, 28, 28, 0.9)), url(/home/startup.jpeg)`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center'
                             }}
                         >
-                            {/* Gradient overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#0D1B2A]/10 to-[#1C1C1C]/0 z-0"></div>
-
+                          
                             {/* Content */}
                             <div className="relative z-10">
                                 <h2 className="text-2xl font-bold text-[#D4AF37] mb-4">
