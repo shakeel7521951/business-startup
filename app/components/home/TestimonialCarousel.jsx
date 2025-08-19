@@ -7,19 +7,19 @@ export function TestimonialCarousel() {
       quote: "Nerou helped us establish our regional HQ in Riyadh within 2 weeks. Their PRO services saved us countless hours with government paperwork.",
       author: "Ahmed Al-Mansoori",
       company: "TechSolutions MENA",
-      avatar: "/avatar1.jpg"
+      avatar: "https://img.freepik.com/free-photo/portrait-confident-young-businessman-with-his-arms-crossed_23-2148176206.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80"
     },
     {
       quote: "From company formation to CRM implementation, their end-to-end solution made our Oman expansion completely seamless.",
       author: "Sarah Johnson",
       company: "Global Logistics Partners",
-      avatar: "/avatar2.jpg"
+      avatar: "https://img.freepik.com/free-photo/medium-shot-woman-posing-indoors_23-2149915935.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80"
     },
     {
       quote: "Their tax advisory service helped us optimize our structure across Qatar and Saudi entities, saving 30% in compliance costs.",
       author: "Mohammed Khan",
       company: "Arabian Ventures",
-      avatar: "/avatar3.jpg"
+      avatar: "https://img.freepik.com/premium-photo/confident-businessman-wearing-suit-stylish-eyeglasses-standing-street-successful-business_207258-775.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80"
     }
   ];
 
