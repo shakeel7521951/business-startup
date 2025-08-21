@@ -1,5 +1,7 @@
 "use client";
 
+
+import Link from "next/link";
 import { useState } from "react";
 
 export default function GCCMapSection() {
@@ -119,10 +121,11 @@ export default function GCCMapSection() {
                                 </div>
                             </div>
                         </div>
-
-                        <button className="mt-8 px-6 py-3 bg-[#0D1B2A] hover:bg-[#D4AF37] text-white font-medium rounded-lg transition-colors">
-                            Start in {currentCountry.name} Now
-                        </button>
+                        <Link href='/contact'>
+                            <button className="mt-8 px-6 py-3 bg-[#0D1B2A] hover:bg-[#D4AF37] text-white font-medium rounded-lg transition-colors">
+                                Start in {currentCountry.name} Now
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Right Column - Map */}

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function CountryComparison() {
   const countries = [
     {
@@ -62,7 +64,7 @@ export function CountryComparison() {
                 { label: "VAT Rate", key: "vat" },
                 { label: "Special Zones", key: "zones" }
               ].map((row, rowIndex) => (
-                <tr 
+                <tr
                   key={row.label}
                   className={rowIndex % 2 === 0 ? "bg-gray-50" : "bg-white"}
                 >
@@ -70,7 +72,7 @@ export function CountryComparison() {
                     {row.label}
                   </td>
                   {countries.map((country) => (
-                    <td 
+                    <td
                       key={`${country.name}-${row.key}`}
                       className="p-4 text-center border-b border-gray-200"
                     >
@@ -84,12 +86,15 @@ export function CountryComparison() {
         </div>
 
         <div className="mt-8 text-center">
-          <button className="px-8 py-3 bg-[#D4AF37] hover:bg-[#C9A227] text-[#0D1B2A] font-bold rounded-full transition-colors inline-flex items-center">
-            Get Personalized Recommendation
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </button>
+          <Link href='/contact'>
+            <button className="px-8 py-3 bg-[#D4AF37] hover:bg-[#C9A227] text-[#0D1B2A] font-bold rounded-full transition-colors inline-flex items-center">
+              Get Personalized Recommendation
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </Link>
+
         </div>
       </div>
     </section>
