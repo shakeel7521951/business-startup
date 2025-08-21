@@ -41,18 +41,9 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center space-x-6">
             <Link href="/" className="hover:text-[#D4AF37]">Home</Link>
             <Link href="/about" className="hover:text-[#D4AF37]">About</Link>
+            <Link href="/services" className="hover:text-[#D4AF37]">Services</Link>
 
-            <div className="relative group">
-              <button className="flex items-center hover:text-[#D4AF37]">
-                Services <FaChevronDown className="ml-1 text-xs mt-1" />
-              </button>
-              <div className="absolute top-6 left-0 hidden group-hover:block bg-white rounded px-6 py-2 z-10 text-nowrap shadow-lg">
-                <Link href="/services/preparation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Preparation</Link>
-                <Link href="/services/formation" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Formation</Link>
-                <Link href="/services/expension" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Expansion</Link>
-                <Link href="/services/transition" className="block py-1 hover:text-[#D4AF37] text-[#0D1B2A]">Transition</Link>
-              </div>
-            </div>
+          
 
             <div className="relative group">
               <button className="flex items-center hover:text-[#D4AF37]">
@@ -88,25 +79,9 @@ export default function Navbar() {
         <nav className="lg:hidden px-6 md:px-12  pb-4 space-y-2 relative z-[100] transition-all duration-500 transform origin-top">
           <Link href="/" className="block hover:text-[#D4AF37] py-2">Home</Link>
           <Link href="/about" className="block hover:text-[#D4AF37] py-2">About</Link>
+          <Link href="/services" className="block hover:text-[#D4AF37] py-2">Services</Link>
 
-          {/* services Mobile Submenu */}
-          <div className="block">
-            <button
-              className="flex items-center justify-between w-full hover:text-[#D4AF37] py-2"
-              onClick={() => setservicesOpen(!servicesOpen)}
-            >
-              <span>Services</span>
-              <FaChevronRight className={`transition-transform duration-200 ${servicesOpen ? 'rotate-90' : ''}`} />
-            </button>
-            {servicesOpen && (
-              <div className="pl-4 space-y-2">
-                <Link href="/services/preparation" className="block hover:text-[#D4AF37] py-1">Preparation</Link>
-                <Link href="/services/formation" className="block hover:text-[#D4AF37] py-1">Formation</Link>
-                <Link href="/services/expension" className="block hover:text-[#D4AF37] py-1">Expansion</Link>
-                <Link href="/services/transition" className="block hover:text-[#D4AF37] py-1">Transition</Link>
-              </div>
-            )}
-          </div>
+         
 
 
           {/* Network Mobile Submenu */}
