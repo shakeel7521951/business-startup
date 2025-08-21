@@ -11,17 +11,14 @@ const footerData = {
     address: "Business Start Up in association with Shorouk Media, Level 18, Tornado Tower, West Bay, Doha, Qatar",
   },
   services: [
-    { name: "Preparation", path: "/services/preparation" },
-    { name: "Formation", path: "/services/formation" },
-    { name: "Expansion", path: "/services/expension" },
-    { name: "Transition", path: "/services/transition" }
+    { name: "Preparation", path: "/services" },
+    { name: "Formation", path: "/services" },
+    { name: "Expansion", path: "/services" },
+    { name: "Transition", path: "/services" }
   ],
   explore: [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    // { name: "Saudi Arabia", path: "/saudi-arabia" },
-    // { name: "Oman", path: "/oman" },
-    // { name: "Qatar", path: "/qatar" },
     { name: "Initiatives", path: "/initiatives" },
     { name: "News", path: "/news" },
     { name: "Events", path: "/events" },
@@ -83,13 +80,13 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block">Contact</h3>
             <p className="flex items-center gap-2 mb-2">
               <FaMailBulk className="text-[#D4AF37]" /> 
-              <Link href={`mailto:${footerData.contact.email}`} className="hover:underline">
+              <Link href={`mailto:${footerData.contact.email}`} className="hover:underline hover:text-[#D4AF37] transition-colors duration-300">
                 {footerData.contact.email}
               </Link>
             </p>
             <p className="flex items-center gap-2 mb-2">
               <FaPhone className="text-[#D4AF37]" /> 
-              <Link href={`tel:${footerData.contact.phone.replace(/\s+/g, '')}`} className="hover:underline">
+              <Link href={`tel:${footerData.contact.phone.replace(/\s+/g, '')}`} className="hover:underline hover:text-[#D4AF37] transition-colors duration-300">
                 {footerData.contact.phone}
               </Link>
             </p>
@@ -145,7 +142,7 @@ export default function Footer() {
               ))}
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block md:mt-12">Network</h3>
+            <h3 className="text-xl font-semibold mb-4 border-b-2 border-[#D4AF37] inline-block md:mt-6">Network</h3>
             <ul className="space-y-2">
               {footerData.network.map((item) => (
                 <li key={item.path}>

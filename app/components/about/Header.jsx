@@ -8,19 +8,13 @@ const Header = () => {
     return (
         <div className="relative">
             {/* Luxury Hero Banner */}
-            <section className="relative h-[85vh] bg-[#0D1B2A] overflow-hidden">
-                {/* Background elements with Image tags */}
+            <section className="relative h-[90vh] bg-[#0D1B2A] overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden z-0">
-                    {/* Header Image */}
-                    <Image
-                        src="/about/header (2).jpg"
-                        alt="Luxury gold texture"
-                        fill
-                        className="object-repeat opacity-25 "
-                        quality={10}
-                        unoptimized 
-                    />
-                   
+
+                    <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-50">
+                        <source src="/about/about.mp4" type="video/mp4" />
+                    </video>
+
                     {/* Gradient overlay */}
                     <div className="absolute left-0 bottom-0 w-full h-32 bg-gradient-to-t from-[#0D1B2A] to-transparent z-10"></div>
                 </div>
