@@ -14,7 +14,7 @@ export default function ServicesDetailPage({ item = [] }) {
           alt={item.title}
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute bottom-5 left-5 sm:bottom-auto sm:left-10 sm:top-1/2 sm:-translate-y-1/2 sm:right-auto mx-auto p-4 sm:p-8 bg-[#0D1B2A]/50 backdrop-blur-sm rounded-lg shadow-2xl w-fit max-w-[90%] sm:max-w-[50%]">
+        <div className="absolute top-30 left-5 sm:bottom-auto sm:left-10 sm:top-1/2 sm:-translate-y-1/2 sm:right-auto mx-auto p-4 sm:p-8 bg-[#0D1B2A]/50 backdrop-blur-sm rounded-lg shadow-2xl w-fit max-w-[90%] sm:max-w-[50%]">
           {/* Gold Accent Bar */}
           <div className="absolute left-0 top-0 h-full w-2 bg-[#D4AF37] rounded-l-lg"></div>
 
@@ -27,7 +27,7 @@ export default function ServicesDetailPage({ item = [] }) {
       </div>
 
       {/* Content Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 p-2 sm:p-6 max-w-7xl mx-auto w-full flex-1">
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 p-2 py-12 sm:p-6 max-w-7xl mx-auto w-full flex-1">
         {/* Left Content: Detail */}
         <div className="text-[#1C1C1C] leading-relaxed whitespace-pre-line">
           <div className="bg-white sm:bg-[#F9F9F9] sm:shadow-md p-0 sm:p-6 rounded-lg  border-l-4 border-[#D4AF37]">

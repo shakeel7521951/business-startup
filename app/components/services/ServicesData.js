@@ -33,7 +33,7 @@ const ServicesData = [
         <img
           src="/services/formation (1).jpg"
           alt="Business licenses and documents"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -79,7 +79,7 @@ const ServicesData = [
         <img
           src="/services/formation.jpg"
           alt="GCC countries business opportunities"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]   mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -133,7 +133,7 @@ const ServicesData = [
         <img
           src="/services/services (1).jpg"
           alt="Document processing and verification"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]   mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -180,7 +180,7 @@ const ServicesData = [
         <img
           src="/services/services (2).jpg"
           alt="Efficient government processing"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]   mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -225,7 +225,7 @@ const ServicesData = [
         <img
           src="/services/visa (1).jpg"
           alt="Visa and immigration process"
-          className="w-full h-[300px] mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -289,7 +289,7 @@ const ServicesData = [
         <img
           src="/services/visa (2).jpg"
           alt="GCC country specific requirements"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -344,7 +344,7 @@ const ServicesData = [
         <img
           src="/services/startup (2).jpg"
           alt="Market analysis and research"
-          className="w-full h-[300px] mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -398,7 +398,7 @@ const ServicesData = [
         <img
           src="/services/animation (4).jpg"
           alt="Strategy implementation and execution"
-          className="w-full h-[300px] mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -451,9 +451,8 @@ const ServicesData = [
         <img
           src="/services/digital (1).jpg"
           alt="Digital marketing channels"
-          className="w-full h-[300px] mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
-
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
           Our Digital Marketing Services
         </h2>
@@ -505,7 +504,7 @@ const ServicesData = [
         <img
           src="/services/services (3).jpg"
           alt="Digital marketing strategy planning"
-          className="w-full h-[300px] mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -561,7 +560,7 @@ const ServicesData = [
         <img
           src="/services/app (2).jpg"
           alt="Digital marketing strategy planning"
-          className="w-full h-[300px] mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -615,7 +614,7 @@ const ServicesData = [
         <img
           src="/services/app (3).jpg"
           alt="Digital marketing strategy planning"
-          className="w-full h-[300px] mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -671,7 +670,7 @@ const ServicesData = [
         <img
           src="/services/animation (1).jpg"
           alt="Automation workflow design"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -726,7 +725,7 @@ const ServicesData = [
        <img
           src="/services/animation (2).jpg"
           alt="Automation workflow design"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -781,7 +780,7 @@ const ServicesData = [
         <img
           src="/services/media (2).jpg"
           alt="Content creation and storytelling"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
@@ -836,7 +835,7 @@ const ServicesData = [
         <img
           src="/services/media.jpg"
           alt="Brand storytelling and narrative development"
-          className="w-full h-[300px]  mx-auto rounded-lg shadow-md"
+          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
         />
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">

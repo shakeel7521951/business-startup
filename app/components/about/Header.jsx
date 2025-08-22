@@ -8,10 +8,10 @@ const Header = () => {
     return (
         <div className="relative">
             {/* Luxury Hero Banner */}
-            <section className="relative h-[90vh] bg-[#0D1B2A] overflow-hidden">
+            <section className="relative h-[90vh] bg-[#0D1B2A] overflow-hidden group">
                 <div className="absolute inset-0 overflow-hidden z-0">
 
-                    <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-50">
+                    <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all duration-500 ">
                         <source src="/about/about.mp4" type="video/mp4" />
                     </video>
 
@@ -19,7 +19,7 @@ const Header = () => {
                     <div className="absolute left-0 bottom-0 w-full h-32 bg-gradient-to-t from-[#0D1B2A] to-transparent z-10"></div>
                 </div>
 
-                <div className="container mx-auto h-full flex flex-col justify-center px-6 lg:ml-12 relative z-10">
+                <div className="container mx-auto h-full flex flex-col justify-center px-6 lg:ml-12 relative z-10 hover:opacity-0 transition-all duration-400">
                     {/* Pearl necklace decoration */}
                     <div className="flex items-center mb-6 animate-fadeIn">
                         <GiPearlNecklace className="text-[#D4AF37] text-3xl mr-4" />

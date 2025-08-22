@@ -8,13 +8,13 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full sm:h-[550px] h-[350px] bg-black">
+      <div className="relative w-full  h-[550px] bg-black ">
         <img
           src="../services/services (2).jpg"
           alt="Preparation Background"
           className="w-full h-full object-cover opacity-30 "
         />
-        <div className="hidden sm:block absolute bottom-10 left-0 right-0 mx-auto p-8 bg-[#0D1B2A]/50 backdrop-blur-sm rounded-lg shadow-2xl w-full max-w-4xl transform -translate-y-1/2 sm:left-10 sm:right-auto sm:top-1/2 sm:bottom-auto sm:max-w-[50%]">
+        <div className=" absolute -bottom-10 left-0 right-0 mx-auto md:p-8 py-4 px-7  bg-[#0D1B2A]/50 backdrop-blur-sm rounded-lg shadow-2xl w-full transform -translate-y-1/2 sm:left-10 sm:right-auto sm:top-1/2 sm:bottom-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%]">
           {/* Gold Accent Bar */}
           <div className="absolute left-0 top-0 h-full w-2 bg-[#D4AF37] rounded-l-lg"></div>
 
@@ -23,7 +23,7 @@ export default function Services() {
             <hr className="absolute left-0 border-0 bottom-0 h-1 w-16 bg-[#D4AF37]"></hr>
           </div>
 
-          <p className="text-white text-justify text-lg leading-relaxed mb-6">
+          <p className="text-white text-justify font-light lg:text-lg lg:leading-relaxed mb-6">
             <strong>Preparation</strong> involves strategic steps such as market
             research, risk assessment, and compliance planning. It focuses on
             understanding customer needs, industry trends, and potential
@@ -52,7 +52,7 @@ export default function Services() {
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-12 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 gap-y-12 sm:px-10 w-full">
             {ServicesData.map((blog, idx) => (
               <div
                 key={idx}
