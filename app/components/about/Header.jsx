@@ -12,7 +12,7 @@ const Header = () => {
                 <div className="absolute inset-0 overflow-hidden z-0">
 
                     <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all duration-500 ">
-                        <source src="/about/about.mp4" type="video/mp4" />
+                        <source src="/about/videos/about.mp4" type="video/mp4" />
                     </video>
 
                     {/* Gradient overlay */}

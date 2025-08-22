@@ -1,6 +1,7 @@
 import { FaRegCalendarAlt, FaChevronRight } from 'react-icons/fa';
 import Image from 'next/image';
 import { FaBuilding, FaGlobeAmericas, FaRobot, FaLandmark } from 'react-icons/fa';
+import Link from 'next/link';
 
 
 export const Timeline = () => {
@@ -137,13 +138,15 @@ export const Timeline = () => {
 
                 {/* CTA Button */}
                 <div className="text-center mt-20">
-                    <button className="relative overflow-hidden bg-[#D4AF37] hover:bg-[#0D1B2A] text-[#0D1B2A] hover:text-[#D4AF37] font-bold py-4 px-10 rounded-full transition-all duration-500 group">
-                        <span className="relative z-10 flex items-center justify-center">
-                            Explore Our Services
-                            <FaChevronRight className="ml-3 group-hover:translate-x-2 transition-transform" />
-                        </span>
-                        <span className="absolute inset-0 bg-[#0D1B2A] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-0"></span>
-                    </button>
+                    <Link href="/services">
+                        <button className="relative overflow-hidden bg-[#D4AF37] hover:bg-[#0D1B2A] text-[#0D1B2A] hover:text-[#D4AF37] font-bold py-4 px-10 rounded-full transition-all duration-500 group">
+                            <span className="relative z-10 flex items-center justify-center">
+                                Explore Our Services
+                                <FaChevronRight className="ml-3 group-hover:translate-x-2 transition-transform" />
+                            </span>
+                            <span className="absolute inset-0 bg-[#0D1B2A] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-0"></span>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

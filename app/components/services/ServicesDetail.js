@@ -27,7 +27,7 @@ export default function ServicesDetailPage({ item = [] }) {
       </div>
 
       {/* Content Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 p-2 py-12 sm:p-6 max-w-7xl mx-auto w-full flex-1">
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 p-2 py-12 sm:p-6 max-w-7xl mx-auto w-full flex-1 lg:relative">
         {/* Left Content: Detail */}
         <div className="text-[#1C1C1C] leading-relaxed whitespace-pre-line">
           <div className="bg-white sm:bg-[#F9F9F9] sm:shadow-md p-0 sm:p-6 rounded-lg  border-l-4 border-[#D4AF37]">
@@ -37,11 +37,11 @@ export default function ServicesDetailPage({ item = [] }) {
 
         {/* Right Content: Other Blogs Grid */}
         {ServicesData.length > 0 && (
-          <aside>
-            <h2 className="text-xl font-bold tracking-wider mb-4 text-[#0D1B2A] border-b-2 border-[#D4AF37] pb-1  ">
+          <aside className="pb-12 lg:h-screen lg:overflow-y-scroll lg:sticky top-6 ">
+            <h2 className="text-xl font-bold tracking-wider mb-4 text-[#0D1B2A] border-b-2 border-[#D4AF37] pb-1 ">
               More services
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 ">
               {ServicesData.map((blog, index) => (
                 <Link
                   key={blog.id || blog.slug || index}

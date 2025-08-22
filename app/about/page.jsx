@@ -1,9 +1,10 @@
 import Cta from "../components/about/Cta";
 import Value from "../components/about/Value";
-import { Team } from "../components/about/Team";
+
 import { Timeline } from "../components/about/TimeLine";
 import { Offices } from "../components/about/Office";
 import Header from "../components/about/Header";
+import { Team } from "../components/about/Team";
 
 export default function AboutPage() {
   return (
@@ -11,7 +12,7 @@ export default function AboutPage() {
       <Header />
       <Timeline />
       <Value />
-      <Team />
+      <Team/>
       <Offices />
       <Cta />
     </div>

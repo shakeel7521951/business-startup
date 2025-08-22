@@ -320,7 +320,7 @@ export default function Contact() {
         </h2>
         <div className="overflow-hidden px-5">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111256.59449794296!2d71.60761016532268!3d29.377064565810574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90c46c611ad5%3A0xfcdf0da8e103f862!2sBahawalpur%2C%20Pakistan!5e0!3m2!1sen!2s!4v1754719121764!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633980.8511495897!2d47.897305984169386!3d25.354826105903088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03ba0dd04c2d%3A0x17cdafc216545f12!2sQatar!5e0!3m2!1sen!2s!4v1753500000000!5m2!1sen!2s"
             loading="lazy"
             className="w-full h-[400px] border-4 border-[#D4AF37] rounded-lg"
           ></iframe>

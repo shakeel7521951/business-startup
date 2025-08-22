@@ -1,3 +1,13 @@
+import {
+  FaPodcast,
+  FaVideo,
+  FaRegCheckCircle,
+  FaUsers,
+  FaGlobe,
+} from "react-icons/fa";
+import { MdEventAvailable } from "react-icons/md";
+import { RiRemoteControlLine } from "react-icons/ri";
+
 const ServicesData = [
   {
     slug: "company-formation",
@@ -17,7 +27,6 @@ const ServicesData = [
           formation services ensure your business is properly structured,
           legally compliant, and positioned for success from day one.
         </p>
-
 
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
           Why Proper Company Formation Matters
@@ -722,7 +731,7 @@ const ServicesData = [
           GCC sales cycles and customer expectations.
         </p>
 
-       <img
+        <img
           src="/services/animation (2).jpg"
           alt="Automation workflow design"
           className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
@@ -731,7 +740,7 @@ const ServicesData = [
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
           Implementation and Support
         </h2>
-    
+
         <p>
           We provide end-to-end implementation including data migration, custom
           configuration, staff training, and ongoing support. Our change
@@ -755,105 +764,119 @@ const ServicesData = [
     image: "/services/media (1).jpg",
     desc: (
       <div className="space-y-8 text-[#1C1C1C] leading-relaxed bg-[#F9F9F9] p-8 rounded-lg">
-        <h1 className="sm:text-3xl text-xl font-extrabold text-[#0D1B2A] border-b-4 border-[#D4AF37] pb-3">
-          Podcast & Media Branding: Amplifying Your Voice in the GCC Market
+        {/* Main Heading */}
+        <h1 className="sm:text-3xl text-xl font-extrabold text-[#0D1B2A] border-b-4 border-[#D4AF37] pb-3 flex items-center gap-2">
+          <FaPodcast className="text-[#D4AF37]" /> Podcast & Media Branding:
+          Amplifying Your Voice
         </h1>
 
         <p>
-          In an increasingly crowded digital landscape, authentic storytelling
-          through podcasts and media content creates powerful connections with
-          GCC audiences. Our media branding services help you develop compelling
-          narratives, produce professional content, and build brand authority
-          through strategic media placement and podcast development.
-        </p>
-
-        <h2 className="text-2xl font-bold text-[#0D1B2A]">
-          The Rise of Audio and Video Content in GCC
-        </h2>
-        <p>
-          GCC populations are among the highest consumers of digital media
-          globally, with podcast listenership growing by 87% in the last two
-          years. Video content consumption exceeds global averages, making media
-          branding an essential component of modern marketing strategies in the
-          region.
+          Shourouk Media, based in Media City Qatar, brings professional podcast
+          & media branding services directly to you. Whether at home, office, or
+          live events, we create premium content with top-tier cameras, lights,
+          and audio equipment — making your brand’s story heard across the GCC.
         </p>
 
         <img
-          src="/services/media (2).jpg"
-          alt="Content creation and storytelling"
-          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
+          src="/services/PODCAST.png"
+          alt="On-location podcast production setup"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
 
-        <h2 className="text-2xl font-bold text-[#0D1B2A]">
-          Our Media Branding Services
+        {/* Why This Matters */}
+        <h2 className="text-2xl font-bold text-[#0D1B2A] flex items-center gap-2">
+          <FaRegCheckCircle className="text-[#D4AF37]" /> Why This Matters
+        </h2>
+        <p>We take the studio to our guests, offering:</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>More comfort and flexibility for guests</li>
+          <li>Unique content captured in authentic settings</li>
+          <li>Professional-grade production, wherever you are</li>
+          <li>Seamless integration with platforms and audience</li>
+        </ul>
+
+        {/* Packages */}
+        <h2 className="text-2xl font-bold text-[#0D1B2A] flex items-center gap-2">
+          <FaVideo className="text-[#D4AF37]" /> Packages We Offer
         </h2>
         <ul className="list-disc list-inside space-y-1">
           <li>
-            <strong>Podcast Strategy & Development:</strong> Concept creation,
-            format design, and episode planning
+            <strong>Record Only:</strong> Pro equipment, unedited audio/video,
+            fast turnaround
           </li>
           <li>
-            <strong>Professional Recording:</strong> Studio-quality audio
-            production and editing
+            <strong>Record & Edit:</strong> Edited audio, animated cover, shared
+            on podcast platforms
           </li>
           <li>
-            <strong>Video Content Production:</strong> Brand stories,
-            testimonials, and educational content
+            <strong>Full Content Pack:</strong> Polished video, graphics,
+            published across channels
           </li>
           <li>
-            <strong>Distribution Strategy:</strong> Platform optimization and
-            syndication across channels
-          </li>
-          <li>
-            <strong>Guest Booking & Management:</strong> Securing industry
-            experts and influencers
-          </li>
-          <li>
-            <strong>Audience Growth:</strong> Strategic promotion to build loyal
-            listenership/viewership
-          </li>
-          <li>
-            <strong>Monetization Strategies:</strong> Sponsorship, advertising,
-            and premium content models
-          </li>
-          <li>
-            <strong>Performance Analytics:</strong> Measuring engagement and ROI
-            of media investments
+            <strong>Turnkey Package:</strong> Editing + teaser video, 3 reels,
+            analytics report
           </li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-[#0D1B2A]">
-          GCC Media Landscape Expertise
+
+        {/* Live Event Podcasting */}
+        <h2 className="text-2xl font-bold text-[#0D1B2A] flex items-center gap-2">
+          <MdEventAvailable className="text-[#D4AF37]" /> Live Event Podcasting
         </h2>
         <p>
-          We understand media consumption patterns across GCC countries,
-          including preferred platforms (Apple Podcasts, Anghami, Spotify,
-          YouTube), optimal content lengths, trending topics, and cultural
-          considerations that resonate with Arab audiences. Our content
-          strategies balance global quality standards with local relevance.
+          We cover live conferences, exhibitions, and events — capturing
+          authentic, real-time stories and delivering instant buzz for your
+          brand.
         </p>
 
         <img
-          src="/services/media.jpg"
-          alt="Brand storytelling and narrative development"
-          className="w-full md:h-[300px]  mx-auto rounded-lg shadow-md"
+          src="/services/COLLABORATING.png"
+          alt="Podcast recording and content creation"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
-
-        <h2 className="text-2xl font-bold text-[#0D1B2A]">
-          Building Authority Through Content
+        {/* Remote Podcasting */}
+        <h2 className="text-2xl font-bold text-[#0D1B2A] flex items-center gap-2">
+          <RiRemoteControlLine className="text-[#D4AF37]" /> Remote Podcasting
         </h2>
         <p>
-          Consistent, high-quality media positioning establishes your brand as
-          an industry authority, builds trust with potential customers, and
-          creates engagement opportunities that traditional advertising cannot
-          match. Our clients average 3x higher engagement rates with media
-          content compared to standard marketing communications.
+          For guests outside Qatar, we provide high-quality Zoom recordings with
+          editing, visuals, and audio cleanup — ensuring professional results
+          anywhere in the world.
         </p>
+
+        {/* Collaborations */}
+        <h2 className="text-2xl font-bold text-[#0D1B2A] flex items-center gap-2">
+          <FaUsers className="text-[#D4AF37]" /> Notable Collaborations
+        </h2>
+        <p>
+          We’ve highlighted innovation in healthcare with <strong>Itqan</strong>{" "}
+          and
+          <strong> Hamad Medical Corporation</strong>, featuring experts such as
+          Prof. Giuseppe Saglio and Prof. Robert Christian Wolf. Our podcasts
+          bring forward pioneering ideas that shape industries.
+        </p>
+
+        <img
+          src="/services/COLLABORATIONS.png"
+          alt="Collaboration with industry experts"
+          className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
+        />
+
+        {/* Impact */}
+        <h2 className="text-2xl font-bold text-[#0D1B2A] flex items-center gap-2">
+          <FaGlobe className="text-[#D4AF37]" /> Impact & Reach
+        </h2>
+        <p>
+          Our shows <strong>I Wanna Grow</strong> and{" "}
+          <strong>In the Game</strong> have over
+          <strong> 7 million Facebook views</strong>. We don’t just create
+          content — we ensure it’s seen via Business Startup platforms across
+          Qatar, Oman, and Saudi Arabia.
+        </p>
+
         <p className="p-4 border-l-4 border-[#D4AF37] bg-white">
-          <strong>Pro Tip:</strong> Repurpose podcast content into multiple
-          formats—blog posts, social media snippets, video clips, and
-          newsletters—to maximize reach and ROI from your media production
-          investment.
+          <strong>Pro Tip:</strong> Repurpose podcast content into blog posts,
+          reels, and newsletters to maximize ROI from every episode.
         </p>
       </div>
     ),
