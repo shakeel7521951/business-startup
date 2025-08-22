@@ -731,6 +731,9 @@ const ServicesData = [
         <h2 className="text-2xl font-bold text-[#0D1B2A]">
           Implementation and Support
         </h2>
+        <h2 className="text-2xl font-bold text-[#0D1B2A]">
+          Implementation and Support
+        </h2>
         <p>
           We provide end-to-end implementation including data migration, custom
           configuration, staff training, and ongoing support. Our change
