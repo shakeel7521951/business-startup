@@ -778,7 +778,7 @@ const ServicesData = [
         </p>
 
         <img
-          src="/services/PODCAST.png"
+          src="/services/PODCAST.PNG"
           alt="On-location podcast production setup"
           className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
@@ -830,7 +830,7 @@ const ServicesData = [
         </p>
 
         <img
-          src="/services/COLLABORATING.png"
+          src="/services/COLLABORATING.PNG"
           alt="Podcast recording and content creation"
           className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
@@ -857,7 +857,7 @@ const ServicesData = [
         </p>
 
         <img
-          src="/services/COLLABORATIONS.png"
+          src="/services/COLLABORATIONS.PNG"
           alt="Collaboration with industry experts"
           className="w-full md:h-[300px] mx-auto rounded-lg shadow-md"
         />
