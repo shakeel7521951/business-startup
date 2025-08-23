@@ -19,17 +19,19 @@ export default function Services() {
           <div className="absolute left-0 top-0 h-full w-2 bg-[#D4AF37] rounded-l-lg"></div>
 
           <div className="flex flex-col font-bold text-2xl sm:text-4xl text-[#D4AF37] mb-4 relative ">
-            <h1 className="">Services</h1>
-            <hr className="absolute left-0 border-0 bottom-0 h-1 w-16 bg-[#D4AF37]"></hr>
+            <h1 className="">Our Professional Services</h1>
+            <hr className="absolute left-0 border-0 -bottom-1 h-1 w-15
+             bg-[#D4AF37]"></hr>
           </div>
 
           <p className="text-white text-justify font-light lg:text-lg lg:leading-relaxed mb-6">
-            <strong>Preparation</strong> involves strategic steps such as market
-            research, risk assessment, and compliance planning. It focuses on
-            understanding customer needs, industry trends, and potential
-            challenges while ensuring legal requirements are met. This phase
-            lays the foundation for success by aligning resources, setting clear
-            goals, and creating backup strategies for dynamic markets.
+            From company formation to PRO and government services, visa and
+            licensing, and business strategy, we provide end-to-end support to
+            help your business grow in competitive markets. Our digital
+            expertise includes marketing, website and app development by Nerou,
+            and CRM and automation powered by Nerou System. We also amplify your
+            brand voice with podcast and media branding, ensuring your business
+            stands out across the GCC and beyond.
           </p>
         </div>
       </div>
