@@ -168,7 +168,7 @@ export const Team = () => {
                     ))}
                 </div>
 
-                {/* Wide video section with increased height and inline playback */}
+                {/* Wide video section with increased height & inline playback */}
                 <div className="mt-16 bg-white rounded-xl shadow-lg overflow-hidden">
                     <div className="relative h-96 md:h-[500px]"> {/* Increased height */}
                         {playingVideo === wideVideo.id ? (
