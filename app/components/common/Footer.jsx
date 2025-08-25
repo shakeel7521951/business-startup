@@ -11,10 +11,10 @@ const footerData = {
     address: "Business Start Up in association with Shorouk Media, Level 18, Tornado Tower, West Bay, Doha, Qatar",
   },
   services: [
-    { name: "Preparation", path: "/services" },
-    { name: "Formation", path: "/services" },
-    { name: "Expansion", path: "/services" },
-    { name: "Transition", path: "/services" }
+    { name: "Formation", path: "/services/company-formation" },
+    { name: "Podcast", path: "/services/podcast-media-branding" },
+    { name: "Visa", path: "/services/visa-licensing" },
+    { name: "Marketing", path: "/services/digital-marketing" }
   ],
   explore: [
     { name: "Home", path: "/" },

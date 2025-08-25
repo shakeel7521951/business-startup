@@ -19,7 +19,7 @@ export default function Contact() {
             src="/contact/contact.jpg"
             alt="Luxury gold texture"
             fill
-            className="object-cover opacity-80"
+            className="object-cover opacity-80 priority"
             quality={10}
             unoptimized
           />
